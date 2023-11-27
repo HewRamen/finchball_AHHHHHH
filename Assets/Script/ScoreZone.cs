@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ScoreZone : MonoBehaviour
 {
-    public TMPro.TextMeshProUGUI scoreText; // Reference to the TextMeshProUGUI component displaying the score
-    public int scoreValue = 10; // Score value when a disc is in the zone
+    public TMPro.TextMeshProUGUI scoreText; 
+    public int scoreValue = 10; 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Disc"))
         {
-            // Increase the score when a disc with the "Disc" tag enters the zone
+           
             UpdateScore(+scoreValue);
         }
     }
@@ -20,16 +20,16 @@ public class ScoreZone : MonoBehaviour
     {
         if (other.CompareTag("Disc"))
         {
-            // Decrease the score when a disc with the "Disc" tag exits the zone
+            
             UpdateScore(-scoreValue);
         }
     }
 
     private void UpdateScore(int value)
     {
-        // Update the score and display it on the UI
+        
         int currentScore = int.Parse(scoreText.text);
-        int newScore = Mathf.Max(0, currentScore + value); // Ensure the score doesn't go below zero
+        int newScore = Mathf.Max(0, currentScore + value); 
         scoreText.text = newScore.ToString();
     }
 }

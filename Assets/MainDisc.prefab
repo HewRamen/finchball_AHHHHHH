@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46dc331d5c354d4fb92c32de2f7a8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPower: 30
+  maxPower: 70
   powerIncreaseRate: 2
   powerGauge: {fileID: 7888719322924564173}
   actualPowerImage: {fileID: 7888719324143879991}
@@ -512,7 +512,7 @@ Transform:
   m_GameObject: {fileID: 7888719323997691062}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 8.549, z: -21.471529}
-  m_LocalScale: {x: 1.1529477, y: 0.5653293, z: 1.1529477}
+  m_LocalScale: {x: 1.5991746, y: 0.7841295, z: 1.5991746}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7888719322759494824}
@@ -580,7 +580,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7888719323997691062}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: df130efce14b8024bb855aead0c3574a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  movementRange: 6.5
+  movementRange: 14
   arrowRotation: {fileID: 7888719323681992377}
   powerBar: {fileID: 7888719323371538835}
   ArrowSpawnPoint: {fileID: 7888719322759494824}

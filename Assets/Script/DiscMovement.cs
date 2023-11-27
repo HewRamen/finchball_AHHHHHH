@@ -12,14 +12,14 @@ public class DiscMovement : MonoBehaviour
     public ArrowRotation arrowRotation;
     public PowerBar powerBar;
     public Transform ArrowSpawnPoint;
-    // Reference to the DiscSpawnPoint script
+    
 
     private float initialX;
     public bool isMoving = true;
     private bool spaceBarPressed = false;
     private bool arrowConfirmed = false;
     private bool powerConfirmed = false;
-    private bool canControl = true; // Flag to determine if the disc can be controlled
+    private bool canControl = true;
 
     private void Start()
     {
@@ -72,7 +72,7 @@ public class DiscMovement : MonoBehaviour
             powerBar.ActivatePowerGauge();
             powerBar.StartChargingPower();
             powerConfirmed = true;
-            canControl = false; // Disable control when switching to launch mode
+            canControl = false; 
         }
     }
 
